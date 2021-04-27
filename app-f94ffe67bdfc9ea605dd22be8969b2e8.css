@@ -163,7 +163,7 @@ button {
       width: 300px;
       height: 300px; } }
   .album:not(.is-opened):hover {
-    opacity: 0.8; }
+    opacity: 1; }
   .album.is-opened {
     opacity: 1; }
   .album.is-other-opened .__front, .album.is-opened .__front {
@@ -446,6 +446,7 @@ button {
 @media (min-width: 768px) {
   .route-music .__albums {
     height: 400px;
+    width: 1850px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -458,6 +459,11 @@ button {
 @media (min-width: 768px) {
   .route-music .album {
     margin-left: 50px; } }
+
+@media (min-width: 768px) and (max-width: 1600px) { .route-music .album-4:not(.is-opened):hover { transform: translateX(-200px); z-index: 1; } }
+@media (min-width: 768px) and (max-width: 1300px) { .route-music .album-4:not(.is-opened):hover { transform: translateX(-300px); z-index: 1; } }
+@media (min-width: 768px) and (max-width: 1600px) { .route-music .album-1:not(.is-opened):hover { transform: translateX(200px); z-index: 1; } }
+@media (min-width: 768px) and (max-width: 1300px) { .route-music .album-1:not(.is-opened):hover { transform: translateX(300px); z-index: 1; } }
 
 @media (min-width: 768px) {
   .route-music .album:last-child {
