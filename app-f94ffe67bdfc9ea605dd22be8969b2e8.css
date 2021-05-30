@@ -54,7 +54,7 @@ button {
   text-indent: -9999px;
   overflow: hidden;
   flex: 1;
-  min-width: 100px;
+  min-width: 80px;
   height: 30px;
   opacity: 0.4;
   transition: opacity 200ms;
@@ -65,18 +65,16 @@ button {
     opacity: 0.7; }
   @media (max-width: 767px) {
     .footer .__link {
-      height: 60px; } }
+      height: 60px;
+      min-width: 100px; } }
 
 .footer .__link--bandcamp {
   background-image: url("../images/social/bandcamp.svg");
-  background-size: auto 18px; }
-  @media (max-width: 767px) {
-    .footer .__link--bandcamp {
-      background-image: url("../images/social/bandcamp-short.svg"); } }
+  background-size: auto 50px; }
 
 .footer .__link--facebook {
   background-image: url("../images/social/facebook-short.svg");
-  background-size: auto 17px; }
+  background-size: auto 18px; }
   @media (max-width: 767px) {
     .footer .__link--facebook {
       background-image: url("../images/social/facebook-short.svg"); } }
@@ -85,19 +83,25 @@ button {
   background-image: url("../images/social/youtube.svg");
   background-size: auto 20px; }
 
+.footer .__link--deezer {
+  background-image: url("../images/social/deezer.svg");
+  background-size: auto 22px; }
+
 .footer .__link--mail {
   background-image: url("../images/social/mail.svg");
   background-size: auto 20px; }
+
+.footer .__link--spotify {
+  background-image: url("../images/social/spotify.svg");
+  background-size: auto 24px; }
 
 .footer .__link--twitter {
   background-image: url("../images/social/twitter.svg");
   background-size: auto 22px; }
 
 .footer .__link--instagram {
-  background-image: url("../images/social/instagram.svg"); }
-  @media (max-width: 550px) {
-    .footer .__link--instagram {
-      display: none; } }
+  background-image: url("../images/social/instagram.svg");
+  background-size: auto; }
 
 .footer .__link--soundcloud {
   background-image: url("../images/social/soundcloud-short.svg");
